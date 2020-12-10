@@ -123,6 +123,7 @@ body{
 	background: url(../img/intro-bg.jpg) no-repeat center;
 	background-size: cover;
 	padding-top: 263px;
+	padding-bottom: 223px;
 }
 .intro__title{
 	font-weight: 500;
@@ -243,4 +244,128 @@ body{
 .benefits__card-more:hover, .benefits__card-more:active {
 	background: url(../img/svg/arrow.svg) no-repeat right center;
 }
-/*Benefits styles start*/
+/*Benefits styles end */
+
+/*Places styles start */
+.places{
+	margin-bottom: 131px;
+}
+.places__caption{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 36px;
+}
+.places__view-all{
+	font-size: 16px;
+	color: #006DFE;
+	text-decoration: none;
+	padding-right: 59px;
+	background: url(../img/svg/arrow.svg) no-repeat 100% center;
+}
+.places__view-all:hover, .places__view-all:active{
+	opacity: 0.65;
+}
+.places__title{
+	margin-right: 15px;
+}
+.places__cards{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: 10px;
+}
+.places__card{
+	position: relative;
+	overflow: hidden;
+}
+.places__card:hover .places__card-pic{
+	transform: scale(1.05);
+}
+.places__card::after{
+	display: block;
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-color: rgba(21, 24, 36, 0.4);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.places__card-title{
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 60px;
+	color: white;
+	position: absolute;
+	bottom: 27px;
+	left: 29px;
+	z-index: 3;
+
+}
+.places__card_size_lg{
+	grid-column: span 3;
+	margin: 0;
+}
+.places__card-pic{
+	width: 100%;
+	transition: 0.2s all;
+}
+.places__card-pic_size_lg{
+	height: 354px;
+	object-fit: cover;
+}
+.places__card-pic_size_sm{
+	height: 283px;
+	object-fit: cover;
+}
+.places__card-link{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 4;
+}
+.places__card_size_sm{
+	grid-column: span 2;
+}
+/*Places styles end */
+
+
+/* Tour styles start */
+.tours{
+	margin-bottom: 139px;
+}
+.tours__tour{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 0 108px;
+	align-items: center;
+	margin-bottom: 77px;
+}
+.tour__info{
+	padding-left: 47px;
+}
+.tour__title{
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 40px;
+	margin-bottom: 85px;
+}
+.tour__desc{
+	font-size: 16px;
+	line-height: 24px;
+}
+.tour__more{
+	font-size: 16px;
+	color: #006DFE;
+	text-decoration: none;
+	padding-right: 59px;
+	background: url(../img/svg/arrow.svg) no-repeat 100% center;
+}
+.tour__more:hover, .tour__more:active{
+	opacity: 0.65;
+}
+	/* Tour styles start */
